@@ -1,10 +1,8 @@
-import { useState } from "react";
 import './about.css'
 import { AboutUi } from "../../components/ui/AboutUi";
 
 
 const About = () => {
-  const [selectedMember, setSelectedMember] = useState(null);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-yellow-100 p-6">
