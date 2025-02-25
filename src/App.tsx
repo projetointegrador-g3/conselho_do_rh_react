@@ -1,10 +1,10 @@
-import './App.css'
+import Colaboradores from "./components/colaboradores/Colaboradores"
 
 function App() {
 
   return (
     <>
-      
+      <Colaboradores />
     </>
   )
 }
