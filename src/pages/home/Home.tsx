@@ -9,6 +9,7 @@ const Home: React.FC = () => {
       {/* Vídeo de fundo */}
       <video autoPlay loop muted className='background-video'>
         <source src='' type="video/mp4" />
+        
         Seu navegador não suporta vídeos.
       </video>
 

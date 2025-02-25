@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const Colaboradores = () => {
   return (
@@ -8,3 +9,5 @@ const Colaboradores = () => {
 }
 
 export default Colaboradores
+=======
+>>>>>>> origin/02_components
