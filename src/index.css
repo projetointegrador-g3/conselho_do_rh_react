@@ -2,6 +2,14 @@
 @tailwind utilities;
 
 /*Configs Gerais*/
+:root {
+  --color-dark: #222116;
+  --color-light: #D4CFA3;
+  --color-greenish: #92A094;
+  --color-gray: #767E71;
+  --color-blueish-gray: #869191;
+}
+
 body {
     font-family: "Inter", serif;
     background-color: #f0f0f0;
