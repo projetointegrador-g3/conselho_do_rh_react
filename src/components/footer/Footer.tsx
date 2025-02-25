@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-
-const Footer = () => {
-  return (
-    <>
-      
-    </>
-  )
-}
-
-export default Footer.
-=======
 import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 function Footer() {
@@ -41,4 +29,3 @@ function Footer() {
 }
 
 export default Footer
->>>>>>> origin/02_components
