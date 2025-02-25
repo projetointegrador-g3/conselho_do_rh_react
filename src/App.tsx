@@ -1,10 +1,10 @@
-import './App.css'
+import About from './pages/about/About'
 
 function App() {
 
   return (
     <>
-      
+      <About />
     </>
   )
 }
