@@ -1,4 +1,5 @@
 import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import styles from './Footer.module.css'
 
 function Footer() {
 
@@ -6,22 +7,19 @@ function Footer() {
 
     return (
         <>
-            <div className="flex justify-center bg-green-900 text-white">
+            <div className={styles.footer_style}>
                 <div className="container flex flex-col items-center py-4">
-                    <p className='text-xl font-bold'>
-                            Conselho do RH | Copyright: {data}
-                        </p>
-                    <p className='text-lg'>Acesse nossas redes sociais</p>
-                    <div className='flex gap-2'>
-
-                        <a href="" target="_blank"><LinkedinLogo size={48} weight='bold' /></a>
-                        <a href="" target="_blank"><InstagramLogo size={48} weight='bold' /></a>
-                        <a href="" target="_blank"><FacebookLogo size={48} weight='bold' /></a>
-                        <a href="" target='_blank'><GithubLogo size={48} weight="bold" /></a>
-
+                    <div className='flex gap-3'>
+                        <a href="" target="_blank"><LinkedinLogo size={40} /></a>
+                        <a href="" target="_blank"><InstagramLogo size={40} /></a>
+                        <a href="" target="_blank"><FacebookLogo size={40} /></a>
+                        <a href="" target='_blank'><GithubLogo size={40}  /></a>
                     </div>
-                    <img className="w-[250px]" 
-                        src="https://ik.imagekit.io/vp8x0spqk/Generation/Távola_Redonda-removebg-preview.png?updatedAt=1740510818552" alt="Tavola Redonda" />
+
+                    <p className='text-lg font-extralight m-0'>Desk Dundies © {data}</p>
+                    <p className='text-lg font-extralight'>Conectando talentos às melhores oportunidades. Sua plataforma confiável para soluções em recrutamento e gestão de pessoas. </p>
+                    <p className='text-lg font-extralight m-0'>Brazil | R$</p>
+                    
                 </div>
             </div>
         </>

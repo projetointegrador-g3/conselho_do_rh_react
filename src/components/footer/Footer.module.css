@@ -1,0 +1,26 @@
+.footer_style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-gray);
+    padding: 1rem;
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    text-align: center;
+
+    & div{
+        display: flex;
+        margin-bottom: 0.5rem;
+        
+    a {
+        color: var(--light-gray);
+        text-decoration: none;
+        margin-right: 1rem;
+        
+        &:hover{
+            color: var(--brown);
+            transition: color 0.4s ease ;
+        }
+    }
+    }
+}

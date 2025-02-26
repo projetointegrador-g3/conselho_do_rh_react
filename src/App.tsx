@@ -7,12 +7,14 @@ import Navbar from './components/navbar/Navbar'
 function App() {
   return (
     <>
-     
      <ToastContainer />
      <Navbar />
+
+     <div className='min-h-[88.5vh]'>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
+     </div>
 
       <Footer />
     </>

@@ -14,7 +14,7 @@
 
 
 .navbar_style {
-    background-color: var(--dark-gray);
+    background-color: var(--black);
     display: flex;
     justify-content: space-between;
     align-items: center;

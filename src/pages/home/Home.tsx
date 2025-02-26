@@ -17,7 +17,7 @@ const Home: React.FC = () => {
             Inovação na atração de talentos
           </h1>
           <p className=''>
-            Com a CDR, você poupa o esforço do seu RH e impulsiona eficiência em todo processo, 
+            Com a Desk Dundies, você poupa o esforço do seu RH e impulsiona eficiência em todo processo, 
             recrutando com agilidade e usando métodos estruturados para selecionar com responsabilidade.
           </p>
         </div>

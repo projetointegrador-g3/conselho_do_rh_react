@@ -6,7 +6,7 @@ function Navbar() {
         <>
             <div className={styles.navbar_style}>
                 <div className="container flex justify-between text-lg">
-                    <a href='/home' className="text-2xl font-bold my-3">Conselho do RH</a>
+                    <a href='/home' className="text-2xl font-bold my-3">ICON</a>
 
                     <div className='flex gap-4 items-center'>
                         <Link to='/colaboradores'>Colaboradores</Link>
