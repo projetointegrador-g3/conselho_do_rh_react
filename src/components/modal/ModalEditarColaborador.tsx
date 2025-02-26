@@ -37,14 +37,13 @@ const ModalEditarColaborador: React.FC<ModalEditarColaboradorProps> = ({ colabor
 
     return (  
         <div className="fixed top-0 left-0 w-full h-full bg-opacity-50 flex justify-center items-center">  
-            <div className="bg-zinc-900 p-3 rounded-lg shadow-md w-96  border-2 border-amber-50 ">  
-                <h2 className="text-2xl font-semibold text-white mb-4">Editar Colaborador</h2>  
+            <div className="bg-zinc-900 p-3 rounded-lg shadow-md w-96 border border-neutral-900">  
+                <h2 className="text-2xl font-semibold text-white mb-4 pl-10">Editar Colaborador</h2>  
 
-    
                 <img  
                     src={colaboradorEditavel.imagem}  
                     alt={`Imagem de ${colaboradorEditavel.nome}`}  
-                    className="rounded-full w-32 h-32 object-cover mb-4"  
+                    className="rounded-full w-32 h-32 mb-4"  
                     onError={(e: any) => {  
                         e.target.onerror = null;  
                         e.target.src = "URL_DA_IMAGEM_PADRAO";  
@@ -92,15 +91,17 @@ const ModalEditarColaborador: React.FC<ModalEditarColaboradorProps> = ({ colabor
                     onSave={(newValue) => handleSalvarCampo("email", newValue)}  
                 />  
 
-                <div className="flex justify-end mt-6 ">  
+                <div className="flex justify-center">  
                     <button  
-                        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"  
+                        className="text-white font-bold px-4 py-2 mx-2 rounded 
+                         bg-neutral-950 hover:bg-zinc-600 shadow-2xl shadow-gray-950"  
                         onClick={handleSalvarColaborador}  
                     >  
                         Salvar  
                     </button>  
                     <button  
-                        className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"  
+                        className="bg-neutral-800 hover:bg-neutral-950 text-white font-bold py-2 px-4 mx-2
+                        rounded shadow-2xl shadow-gray-950"  
                         onClick={onClose}  
                     >  
                         Cancelar  

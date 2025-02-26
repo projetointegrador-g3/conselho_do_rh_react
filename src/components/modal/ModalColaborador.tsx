@@ -77,63 +77,49 @@ const ModalColaborador: React.FC<ModalProps> = ({ colaborador, onClose }) => {
   }  
 
   return (  
-    <div className="fixed inset-0  bg-opacity-50 overflow-y-auto h-full w-full">  
-      <div className=" text-amber-50 relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-md bg-zinc-900">  
-        <div  
-          className="container mx-auto py-8 px-6 border border-gray-300 rounded-lg flex"  
-          ref={contentRef}  
-        >  
-          {/* Coluna da Imagem */}  
-          <div className="w-1/3 mr-4">  
-            <img  
-              src={colaborador.imagem}  
-              alt=""  
-              className="rounded-full w-full mb-4"  
-            />  
-          </div>  
+      <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 h-full w-full">
+        <div className="text-amber-50 p-5 border w-3/4 max-w-3xl shadow-lg rounded-md bg-zinc-900">
+          <div className="container mx-auto py-8 px-6 border border-gray-300 rounded-lg flex items-center">
+          {/* Coluna da Imagem */}
+          <div className="w-1/3 flex justify-center">
+            <img
+              src={colaborador.imagem}
+              alt={colaborador.nome}
+              className="rounded-full w-32 h-32 object-cover"
+            />
+          </div>
 
-          {/* Coluna das Informações */}  
-          <div className="w-2/3">  
-            <h2 className="text-2xl font-semibold mb-4">{colaborador.nome}</h2>  
-            <p className="mb-2">  
-              <strong>Departamento:</strong> {colaborador.departamento}  
-            </p>  
-            <p className="mb-2">  
-              <strong>Salário Bruto:</strong> R$ {colaborador.salario ? colaborador.salario.toFixed(2) : '0.00'}  
-            </p>  
-            <p className="mb-2">  
-              <strong>INSS:</strong> R$ {valorINSS.toFixed(2)}  
-            </p>  
-            <p className="mb-2">  
-              <strong>IRRF:</strong> R$ {valorIRRF.toFixed(2)}  
-            </p>  
-            <p className="mb-2">  
-              <strong>Salário Líquido:</strong> R$ {salarioLiquido.toFixed(2)}  
-            </p>  
-            <p className="mb-2">  
-              <strong>Email:</strong> {colaborador.email}  
-            </p>  
+          {/* Coluna das Informações */}
+          <div className="w-2/3 pl-6">
+            <h2 className="text-2xl font-semibold mb-4">{colaborador.nome}</h2>
+            <p className="mb-2"><strong>Departamento: </strong> {colaborador.departamento}</p>
+            <p className="mb-2"><strong>Salário Bruto: </strong> R$ {colaborador.salario ? colaborador.salario.toFixed(2) : '0.00'}</p>
+            <p className="mb-2"><strong>INSS: </strong> R$ {valorINSS.toFixed(2)}</p>
+            <p className="mb-2"><strong>IRRF: </strong> R$ {valorIRRF.toFixed(2)}</p>
+            <p className="mb-2"><strong>Salário Líquido: </strong> R$ {salarioLiquido.toFixed(2)}</p>
+            <p className="mb-2"><strong>Email: </strong> {colaborador.email}</p>
 
-            {/* Botões alinhados à direita */}  
-            <div className="flex gap-3 text-right mt-6 mr-6">  
-              <button  
-                className="border-zinc-300 border hover:bg-zinc-500 text-white font-bold py-2 px-4 rounded mr-2"  
-                onClick={handlePrintClick}  
-              >  
-                <Printer size={20} className="inline-block mr-2 align-middle" />  
-                Imprimir  
-              </button>  
-              <button  
-                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"  
-                onClick={onClose}  
-              >  
-                Fechar  
-              </button>  
-            </div>  
-          </div>  
-        </div>  
-      </div>  
-    </div>  
+            {/* Botões alinhados ao centro */}
+            <div className="flex justify-center gap-4 mt-6 pr-33">
+              <button
+                className=" bg-neutral-950 hover:bg-zinc-500 shadow-2xl shadow-gray-950 text-white font-bold py-2 px-4 rounded"
+                onClick={handlePrintClick}
+              >
+                <Printer size={20} className="inline-block mr-2 align-middle" />
+                Imprimir
+              </button>
+              <button
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded"
+                onClick={onClose}
+              >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   );  
 };  
 

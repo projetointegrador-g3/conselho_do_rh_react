@@ -47,13 +47,13 @@ const CampoEditavel: React.FC<CampoEditavelProps> = ({ label, value, type, onSav
                   />  
                   <button  
                       onClick={handleSave}  
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"  
+                      className="bg-cyan-900 hover:bg-cyan-950 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline mr-2"  
                   >  
                       Salvar  
                   </button>  
                   <button  
                       onClick={handleCancel}  
-                      className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  
+                      className="bg-neutral-800 hover:bg-neutral-950 text-white py-1 px-2  rounded focus:outline-none focus:shadow-outline"  
                   >  
                       Cancelar  
                   </button>  
