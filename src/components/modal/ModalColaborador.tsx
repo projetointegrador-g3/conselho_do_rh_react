@@ -2,6 +2,7 @@ import React, { useRef, useCallback } from 'react';
 import { useReactToPrint } from 'react-to-print';  
 import { Colaborador } from '../colaboradores/ColaboradoresData';  
 import { Printer } from '@phosphor-icons/react';  
+import '../../index.css'
 
 interface ModalProps {  
   colaborador: Colaborador | null;  
@@ -114,9 +115,9 @@ const ModalColaborador: React.FC<ModalProps> = ({ colaborador, onClose }) => {
             </p>  
 
             {/* Botões alinhados à direita */}  
-            <div className="text-right mt-6">  
+            <div className="flex gap-3 text-right mt-6 mr-6">  
               <button  
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"  
+                className="border-zinc-300 border hover:bg-zinc-500 text-white font-bold py-2 px-4 rounded mr-2"  
                 onClick={handlePrintClick}  
               >  
                 <Printer size={20} className="inline-block mr-2 align-middle" />  
