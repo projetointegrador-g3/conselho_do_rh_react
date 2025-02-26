@@ -3,7 +3,7 @@
 <br />
 
 <div align="center">
-    <img src="desk-dundies.png" title="desk dundies logo" width="50%"/>
+    <img src="public/desk-dundies.png" title="desk dundies logo" width="50%"/>
 </div>
 
 
@@ -26,7 +26,7 @@ O projeto consiste no desenvolvimento do frontend de um Sistema de cadastro RH u
   - Footer
     
 <div align="center">
-    <img src="diagrama_frontend.png" title="diagrama DOM" width="80%"/>
+    <img src="public/diagrama_frontend.png" title="diagrama DOM" width="80%"/>
 </div>
 
 ------
