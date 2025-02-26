@@ -77,7 +77,7 @@ const ModalColaborador: React.FC<ModalProps> = ({ colaborador, onClose }) => {
   }  
 
   return (  
-      <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 h-full w-full">
+      <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 h-full w-full " ref={contentRef}>
         <div className="text-amber-50 p-5 border w-3/4 max-w-3xl shadow-lg rounded-md bg-zinc-900">
           <div className="container mx-auto py-8 px-6 border border-gray-300 rounded-lg flex items-center">
           {/* Coluna da Imagem */}
@@ -90,7 +90,7 @@ const ModalColaborador: React.FC<ModalProps> = ({ colaborador, onClose }) => {
           </div>
 
           {/* Coluna das Informações */}
-          <div className="w-2/3 pl-6">
+          <div className="w-2/3 pl-6" ref={contentRef}>
             <h2 className="text-2xl font-semibold mb-4">{colaborador.nome}</h2>
             <p className="mb-2"><strong>Departamento: </strong> {colaborador.departamento}</p>
             <p className="mb-2"><strong>Salário Bruto: </strong> R$ {colaborador.salario ? colaborador.salario.toFixed(2) : '0.00'}</p>

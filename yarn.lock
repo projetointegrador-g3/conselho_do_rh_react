@@ -1972,6 +1972,13 @@ react-router@7.2.0:
     set-cookie-parser "^2.6.0"
     turbo-stream "2.4.0"
 
+react-to-print-advanced@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-to-print-advanced/-/react-to-print-advanced-2.1.2.tgz#8831648f0f0208d1d13b1640f37ef0c0f4d4e06a"
+  integrity sha512-5/rXAfoV+Tga4p5nwyY4wDVO3zmyrfAn/KIdJXMAkkN153fJgcEK9HSatTYWBcK64GcF5/eLtyqpLQ7mCwZcIg==
+  dependencies:
+    prop-types "^15.6.2"
+    
 react-to-print@^3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-3.0.5.tgz#7569f9ac5e7854dbec79f449501fedf28cda82ab"
