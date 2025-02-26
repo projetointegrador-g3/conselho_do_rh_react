@@ -1,67 +1,73 @@
 import React, { useState, useEffect } from 'react';  
-import { PencilSimpleLine } from '@phosphor-icons/react';  
+
 
 interface CampoEditavelProps {  
-  label: string;  
-  value: any;  
-  type: string;  
-  onSave: (newValue: any) => void;  
+    label: string;  
+    value: any;  
+    type: string;  
+    onSave: (newValue: any) => void;  
 }  
 
 const CampoEditavel: React.FC<CampoEditavelProps> = ({ label, value, type, onSave }) => {  
-  const [editing, setEditing] = useState(false);  
+  const [isEditing, setIsEditing] = useState(false);  
   const [newValue, setNewValue] = useState(value);  
 
-  // Mantém newValue sincronizado com value quando o value é alterado externamente  
   useEffect(() => {  
-    setNewValue(value);  
+      setNewValue(value); // Garante que o valor seja atualizado quando a prop 'value' mudar  
   }, [value]);  
 
+  const handleDoubleClick = () => {  
+      setIsEditing(true);  
+  };  
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {  
+      setNewValue(e.target.value);  
+  };  
+
   const handleSave = () => {  
-    onSave(newValue);  
-    setEditing(false);  
+      onSave(newValue);  
+      setIsEditing(false);  
+  };  
+
+  const handleCancel = () => {  
+      setNewValue(value); // Reverte para o valor original  
+      setIsEditing(false);  
   };  
 
   return (  
-    <div className="flex items-center mb-2">  
-      <strong className="mr-2">{label}:</strong>  
-      {editing ? (  
-        <>  
-          <input  
-            type={type}  
-            value={newValue}  
-            onChange={(e) => setNewValue(type === 'number' ? Number(e.target.value) : e.target.value)}  
-            className="border rounded py-1 px-2 mr-2"  
-          />  
-          <button  
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded mr-2"  
-            onClick={handleSave}  
-          >  
-            Salvar  
-          </button>  
-          <button  
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded"  
-            onClick={() => {  
-              setNewValue(value); // Reverte para o valor original  
-              setEditing(false);  
-            }}  
-          >  
-            Cancelar  
-          </button>  
-        </>  
-      ) : (  
-        <>  
-          <span>{type === 'number' ? (typeof value === 'number' ? value.toFixed(2) : '0.00') : value}</span>  
-          <button  
-            className="ml-2 text-gray-500 hover:text-gray-700 focus:outline-none"  
-            onClick={() => setEditing(true)}  
-          >  
-            <PencilSimpleLine size={16} />  
-          </button>  
-        </>  
-      )}  
-    </div>  
+      <div className="mb-4">  
+          <label className="block text-white text-sm font-bold mb-2">{label}:</label>  
+          {isEditing ? (  
+              <div className="flex items-center">  
+                  <input  
+                      type={type}  
+                      value={newValue}  
+                      onChange={handleChange}  
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mr-2"  
+                  />  
+                  <button  
+                      onClick={handleSave}  
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mr-2"  
+                  >  
+                      Salvar  
+                  </button>  
+                  <button  
+                      onClick={handleCancel}  
+                      className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"  
+                  >  
+                      Cancelar  
+                  </button>  
+              </div>  
+          ) : (  
+              <span  
+                  onDoubleClick={handleDoubleClick}  
+                  className="text-white cursor-pointer"  
+              >  
+                  {value}  
+              </span>  
+          )}  
+      </div>  
   );  
 };  
 
-export default CampoEditavel;
+export default CampoEditavel;  
