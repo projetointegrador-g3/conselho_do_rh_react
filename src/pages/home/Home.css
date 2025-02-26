@@ -1,0 +1,20 @@
+/* Responsividade até 480px */
+
+@media (max-width: 480px) {
+    .content {
+        width: 70vw;
+        padding: 10px;
+    }
+
+    .text_title_home {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .text-lg {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+    .ml-370 {
+        margin-left: 0; /* Certifique-se de que o MusicPlayer está centralizado */
+    }
+}

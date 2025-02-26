@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MusicPlayer from '../../lib/MusicPlayer';
+import "./Home.css"
 
 const Home: React.FC = () => {
   return (
