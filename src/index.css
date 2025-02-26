@@ -22,7 +22,8 @@ body {
 
 /* Configurações especiais para Home */
 .text_title_home {
-    font-family: Impact, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 15px;
     text-align: center;
     padding-top: 50px;
     text-transform: uppercase;

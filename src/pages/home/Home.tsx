@@ -13,9 +13,9 @@ const Home: React.FC = () => {
 
         {/* Conteúdo centralizado */}
         <div className='content text-white rounded-lg p-13 my-10'>
-          <h1 className='text_title_home'>
+          <p className='text_title_home'>
             Inovação na atração de talentos
-          </h1>
+          </p>
           <p className=''>
             Com a Desk Dundies, você poupa o esforço do seu RH e impulsiona eficiência em todo processo, 
             recrutando com agilidade e usando métodos estruturados para selecionar com responsabilidade.
