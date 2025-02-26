@@ -4,7 +4,8 @@ import { Money, PencilLine, Trash } from '@phosphor-icons/react'
 const Colaboradores = () => {
   return (
     <>
-      <div className="fundoCol">
+    
+      <div className="fundoCol flex flex-col items-center">
 
         <div className='flex gap-12 px-32 mt-32 mb-12'>
 
@@ -115,6 +116,7 @@ const Colaboradores = () => {
               </div>
           </div>
         </div>
+    
     </>
   )
 }
