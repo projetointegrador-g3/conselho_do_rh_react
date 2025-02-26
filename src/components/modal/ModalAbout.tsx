@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import './Modal.css'; // Estilos personalizados para o modal
+import { AboutPopUp } from '../ui/AboutPopUp';
 
 const teamMembers = [
   { name: "Bruno", role: "Backend Developer", image: "https://via.placeholder.com/150", description: "Especialista em APIs e bancos de dados." },
@@ -46,9 +46,11 @@ function Modal() {
             <h3 className="text-2xl font-semibold text-yellow-900">{selectedMember.name}</h3>
             <p className="text-yellow-700 italic">{selectedMember.role}</p>
             <p className="mt-4 text-gray-800">{selectedMember.description}</p>
+              <AboutPopUp />
           </div>
         )}
       </Popup>
+
     </div>
   );
 }

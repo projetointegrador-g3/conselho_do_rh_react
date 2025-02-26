@@ -1,5 +1,4 @@
-import './about.css'
-import { AboutUi } from "../../components/ui/AboutUi";
+import ModalAbout from '../../components/modal/ModalAbout';
 
 
 const About = () => {
@@ -14,7 +13,9 @@ const About = () => {
         </header>
         <p className="p-3 text-lg text-zinc-900 italic">Biridin</p>
       </section>
-    <AboutUi />
+
+    <ModalAbout />
+    
     </div>
   );
 };

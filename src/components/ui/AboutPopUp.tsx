@@ -13,7 +13,7 @@ const members = [
   { name: "Andressa", role: "Full Stack Developer", image: "https://ik.imagekit.io/grupo03/perfis/Andressa.png?updatedAt=1740534607718", linkedin: "#" },
 ];
 
-export const AboutUi = () => {
+export const AboutPopUp = () => {
   const [selectedMember, setSelectedMember] = useState<any>(null);
 
   return (
