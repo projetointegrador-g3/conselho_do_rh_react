@@ -1,161 +1,53 @@
-import React from 'react';
-import {
-  FaShoppingCart,
-  FaReceipt,
-  FaCheckCircle,
-  FaPlus,
-  FaTrash,
-  FaFolder,
-} from 'react-icons/fa';
+import { 
+  ShoppingCart, Receipt, CheckCircle, Plus, Trash, Folder, Archive, PencilLine,
+  Package,
+  Calculator,
+  Dresser,
+  Medal,
+  UsersThree, 
+} from '@phosphor-icons/react';
 
-const Departamentos: React.FC = () => {
+const departamentos = [
+  { nome: "Vendas", icone: Archive },
+  { nome: "Compras", icone: ShoppingCart },
+  { nome: "Recepção", icone: Receipt },
+  { nome: "Qualidade", icone: CheckCircle },
+  { nome: "Contabilidade", icone: Calculator },
+  { nome: "Atendimento ao Cliente", icone: UsersThree },
+  { nome: "Diretoria", icone: Medal },
+  { nome: "Estoque", icone: Dresser },
+  { nome: "Logística", icone: Package },
+];
+
+function Departamentos() {
   return (
-    <div className="p-5 font-sans">
-      <div className="flex items-center gap-2 mb-4">
-        <h1 className="text-xl font-bold m-0">Departamentos</h1>
-        <button
-          className="bg-transparent border-none cursor-pointer flex items-center text-blue-500 hover:text-blue-700"
-          onClick={() => alert('Adicionar novo departamento')}
+    <div className="font-sans">
+      <div className="flex items-center justify-between pr-18 gap-2 m-16 ml-32">
+        <h1 className="text-3xl font-bold flex items-center gap-2">
+          <Folder /> Departamentos
+        </h1>
+        <button 
+          className="bg-zinc-200 border-none cursor-pointer rounded-md p-2 flex items-center text-zinc-500 hover:text-zinc-800 hover:scale-104" 
+          onClick={() => alert('Adicionar novo departamento')} 
         >
-          <FaPlus />
+          Adicionar novo departamento <Plus />
         </button>
       </div>
-
-      <ul className="list-none p-0">
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaFolder className="bg-gray-400 text-zin-900" />
-              <strong>Vendas</strong>
+      <ul className="list-none px-32">
+        {departamentos.map(({ nome, icone: Icon }, index) => (
+          <li key={index} className="mb-4">
+            <div className="flex items-center justify-between bg-zinc-300 p-4 rounded-lg">
+              <div className="flex items-center gap-2">
+                <Icon className="size-6" />
+                <strong>{nome}</strong>
+              </div>
+              <button className="flex gap-2 border-none cursor-pointer" onClick={() => alert(`Excluir departamento: ${nome}`)}>
+                <PencilLine className='size-6 hover:text-zinc-500' />
+                <Trash className='size-6 text-red-700 hover:text-red-500' />
+              </button>
             </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Vendas')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaShoppingCart className="bg-gray-400 text-zin-900" />
-              <strong>Compras</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Compras')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaReceipt className="bg-gray-400 text-zin-900" />
-              <strong>Recepção</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Recepção')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaCheckCircle className="bg-gray-400 text-zin-900" />
-              <strong>Qualidade</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Qualidade')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaFolder className="bg-gray-400 text-zin-900" />
-              <strong>Contabilidade</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Contabilidade')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaFolder className="bg-gray-400 text-zin-900" />
-              <strong>Atendimento ao Cliente</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Atendimento ao Cliente')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaFolder className="bg-gray-400 text-zin-900" />
-              <strong>Diretoria</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Diretoria')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaFolder className="bg-gray-400 text-zin-900" />
-              <strong>Estoque</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Estoque')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
-
-        <li className="mb-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FaFolder className="bg-gray-400 text-zin-900" />
-              <strong>Logística</strong>
-            </div>
-            <button
-              className="bg-transparent border-none cursor-pointer text-red-500 hover:text-red-700"
-              onClick={() => alert('Excluir departamento: Logística')}
-            >
-              <FaTrash />
-            </button>
-          </div>
-        </li>
+          </li>
+        ))}
       </ul>
     </div>
   );
