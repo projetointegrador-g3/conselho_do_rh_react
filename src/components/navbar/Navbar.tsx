@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import styles from './Navbar.module.css'
-import MusicPlayer from "../../lib/MusicPlayer"
 
 function Navbar() {
     return (
@@ -8,9 +7,10 @@ function Navbar() {
             <div className={styles.navbar_style}>
                 <div className="container flex justify-between text-lg">
 
-                    <a href='/home'>
-                    <img className='w-25' src='https://ik.imagekit.io/grupo03/Desk%20Dundies/HR_DUNDIES_1.png?updatedAt=1740530750161'/>
-                    </a>
+                    <Link to='/home'>
+                    <img src='https://ik.imagekit.io/grupo03/Desk%20Dundies/HR_DUNDIES_1.png?updatedAt=1740530750161'
+                    className='w-25' />
+                    </Link>
 
                     <div className='flex gap-4 items-center'>
                         <Link to='/colaboradores'>Colaboradores</Link>
