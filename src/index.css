@@ -22,17 +22,16 @@ body {
 
 /* Configurações especiais para Home */
 .text_title_home {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 15px;
+    font-family: "Staatliches", serif;
     text-align: center;
-    padding-top: 50px;
+    padding: 25px 25px 5px 20px;
     text-transform: uppercase;
     font-size: 48px;
 }
 
 .content {
   text-align: center;
-  color: white;
+  color: var(--light-gray);
   position: absolute;
   top: 50%;
   left: 50%;

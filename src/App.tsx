@@ -10,9 +10,10 @@ function App() {
      <ToastContainer />
      <Navbar />
 
-     <div className='min-h-[88.5vh]'>
+     <div className='min-h-[89vh]'>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
       </Routes>
      </div>
 
