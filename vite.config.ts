@@ -9,10 +9,3 @@ export default defineConfig({
     tailwindcss(),
   ],
 })
-
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
-
-})
