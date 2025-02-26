@@ -1,7 +1,7 @@
-import React, { useRef, useCallback } from 'react';  
-import { useReactToPrint } from 'react-to-print';  
-import { Colaborador } from '../colaboradores/ColaboradoresData';  
-import { Printer } from '@phosphor-icons/react';  
+import React, { useRef, useCallback } from 'react';
+import { useReactToPrint } from 'react-to-print';
+import { Colaborador } from '../colaboradores/ColaboradoresData';
+import { Printer } from '@phosphor-icons/react';
 import '../../index.css'
 
 interface ModalProps {  

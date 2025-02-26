@@ -4,13 +4,13 @@ import 'reactjs-popup/dist/index.css';
 import { AboutPopUp } from '../ui/AboutPopUp';
 
 const teamMembers = [
-  { name: "Bruno Lima", role: "Scrum Master", image: "https://ik.imagekit.io/grupo03/perfis/Bruno.png?updatedAt=1740534609140", linkedin: "#" },
-  { name: "Josadaque", role: "Mestre do BackEnd", image: "https://ik.imagekit.io/grupo03/perfis/Josadaque.png?updatedAt=1740534610231", linkedin: "#" },
-  { name: "Fernanda", role: "UI/UX Designer", image: "https://ik.imagekit.io/grupo03/perfis/Fernanda.png?updatedAt=1740534608841", linkedin: "#" },
-  { name: "Victor", role: "Gerente de Projetos", image: "https://ik.imagekit.io/grupo03/perfis/Victor.png?updatedAt=1740534610684", linkedin: "#" },
-  { name: "Beatriz", role: "Backend Developer", image: "https://ik.imagekit.io/grupo03/perfis/Beatriz.png?updatedAt=1740534608059", linkedin: "#" },
-  { name: "Emily", role: "Frontend Developer", image: "https://ik.imagekit.io/grupo03/perfis/Emily.png?updatedAt=1740535030736", linkedin: "#" },
-  { name: "Andressa", role: "Full Stack Developer", image: "https://ik.imagekit.io/grupo03/perfis/Andressa.png?updatedAt=1740534607718", linkedin: "#" },
+  { name: "Bruno L.", role: "Dev FullStack TS/JS", image: "https://ik.imagekit.io/grupo03/perfis/Bruno.png?updatedAt=1740534609140", linkedin: "#" },
+  { name: "Josadaque", role: "Dev FullStack Java", image: "https://ik.imagekit.io/grupo03/perfis/Josadaque.png?updatedAt=1740534610231", linkedin: "#" },
+  { name: "Fernanda", role: "Dev FullStack Web", image: "https://ik.imagekit.io/grupo03/perfis/Fernanda.png?updatedAt=1740534608841", linkedin: "#" },
+  { name: "Victor P.", role: "Dev FullStack TS/JS", image: "https://ik.imagekit.io/grupo03/perfis/Victor.png?updatedAt=1740534610684", linkedin: "#" },
+  { name: "Beatriz", role: "Dev FullStack React.js", image: "https://ik.imagekit.io/grupo03/perfis/Beatriz.png?updatedAt=1740534608059", linkedin: "#" },
+  { name: "Emily D.", role: "Dev FullStack Web", image: "https://ik.imagekit.io/grupo03/perfis/Emily.png?updatedAt=1740535030736", linkedin: "#" },
+  { name: "Andressa", role: "Dev FullStack JS", image: "https://ik.imagekit.io/grupo03/perfis/Andressa.png?updatedAt=1740534607718", linkedin: "#" },
 ];
 
 function Modal() {
