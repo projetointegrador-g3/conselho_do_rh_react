@@ -1,21 +1,19 @@
 .footer_style {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: var(--dark-gray);
-    padding: 1rem;
+    padding: 0 0 10px 0;
     color: var(--light-gray);
     font-size: 1.2rem;
     text-align: center;
 
     & div{
         display: flex;
-        margin-bottom: 0.5rem;
         
     a {
         color: var(--light-gray);
         text-decoration: none;
-        margin-right: 1rem;
+        margin-right: 5px;
+        align-items: center;
         
         &:hover{
             color: var(--brown);
