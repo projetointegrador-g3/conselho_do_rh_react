@@ -770,7 +770,7 @@
     "@tailwindcss/oxide-win32-arm64-msvc" "4.0.9"
     "@tailwindcss/oxide-win32-x64-msvc" "4.0.9"
 
-"@tailwindcss/vite@^4.0.8":
+"@tailwindcss/vite@^4.0.9":
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/@tailwindcss/vite/-/vite-4.0.9.tgz#31e707ee7dabecc5a288c77c7504c8454a7add2d"
   integrity sha512-BIKJO+hwdIsN7V6I7SziMZIVHWWMsV/uCQKYEbeiGRDRld+TkqyRRl9+dQ0MCXbhcVr+D9T/qX2E84kT7V281g==
@@ -779,16 +779,6 @@
     "@tailwindcss/oxide" "4.0.9"
     lightningcss "^1.29.1"
     tailwindcss "4.0.9"
-
-"@ts-morph/common@~0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@ts-morph/common/-/common-0.19.0.tgz#927fcd81d1bbc09c89c4a310a84577fb55f3694e"
-  integrity sha512-Unz/WHmd4pGax91rdIKWi51wnVUW11QttMEPpBiBgIewnc9UQIX7UDLxr5vRlqeByXCwhkF6VabSsI0raWcyAQ==
-  dependencies:
-    fast-glob "^3.2.12"
-    minimatch "^7.4.3"
-    mkdirp "^2.1.6"
-    path-browserify "^1.0.1"
 
 "@types/babel__core@^7.20.5":
   version "7.20.5"
@@ -2351,13 +2341,10 @@ react-dom@^19.0.0:
   dependencies:
     scheduler "^0.25.0"
 
-react-h5-audio-player@^3.10.0-rc.1:
-  version "3.10.0-rc.1"
-  resolved "https://registry.yarnpkg.com/react-h5-audio-player/-/react-h5-audio-player-3.10.0-rc.1.tgz#c718fca980521a7cf633a5484dd559084c43af81"
-  integrity sha512-A/Okq9BoOfqUc1oQxcqZWeL5DMeBAMfb7aA7G64EAle3BM7PVYH9ZyES9PespfT2CgKRpAv855gUoMs0PWGhOQ==
-  dependencies:
-    "@babel/runtime" "^7.10.2"
-    "@iconify/react" "^5"
+react-icons@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.5.0.tgz#8aa25d3543ff84231685d3331164c00299cdfaf2"
+  integrity sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==
 
 react-is@^16.13.1, react-is@^16.3.2:
   version "16.13.1"
@@ -2670,7 +2657,7 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tailwindcss@4.0.9, tailwindcss@^4.0.8:
+tailwindcss@4.0.9, tailwindcss@^4.0.9:
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.0.9.tgz#f6626cee837aabe9e54c29b230b6fb0ed36fe965"
   integrity sha512-12laZu+fv1ONDRoNR9ipTOpUD7RN9essRVkX36sjxuRUInpN7hIiHN4lBd/SIFjbISvnXzp8h/hXzmU8SQQYhw==
