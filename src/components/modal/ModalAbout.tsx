@@ -4,13 +4,13 @@ import 'reactjs-popup/dist/index.css';
 import { AboutPopUp } from '../ui/AboutPopUp';
 
 const teamMembers = [
-  { name: "Bruno", role: "Backend Developer", image: "https://via.placeholder.com/150", description: "Especialista em APIs e bancos de dados." },
-  { name: "Josa", role: "Desenvolvedora", image: "https://via.placeholder.com/150", description: "Especialista em Frontend e UI/UX." },
-  { name: "Fe", role: "Designer", image: "https://via.placeholder.com/150", description: "Apaixonado por design minimalista." },
-  { name: "Victor", role: "Gerente de Projetos", image: "https://via.placeholder.com/150", description: "Líder focada em agilidade e inovação." },
-  { name: "Bia", role: "Backend Developer", image: "https://via.placeholder.com/150", description: "Especialista em APIs e bancos de dados." },
-  { name: "Emily", role: "Backend Developer", image: "https://via.placeholder.com/150", description: "Especialista em APIs e bancos de dados." },
-  { name: "Andressa", role: "Backend Developer", image: "https://via.placeholder.com/150", description: "Especialista em APIs e bancos de dados." },
+  { name: "Bruno Lima", role: "Scrum Master", image: "https://ik.imagekit.io/grupo03/perfis/Bruno.png?updatedAt=1740534609140", linkedin: "#" },
+  { name: "Josadaque", role: "Mestre do BackEnd", image: "https://ik.imagekit.io/grupo03/perfis/Josadaque.png?updatedAt=1740534610231", linkedin: "#" },
+  { name: "Fernanda", role: "UI/UX Designer", image: "https://ik.imagekit.io/grupo03/perfis/Fernanda.png?updatedAt=1740534608841", linkedin: "#" },
+  { name: "Victor", role: "Gerente de Projetos", image: "https://ik.imagekit.io/grupo03/perfis/Victor.png?updatedAt=1740534610684", linkedin: "#" },
+  { name: "Beatriz", role: "Backend Developer", image: "https://ik.imagekit.io/grupo03/perfis/Beatriz.png?updatedAt=1740534608059", linkedin: "#" },
+  { name: "Emily", role: "Frontend Developer", image: "https://ik.imagekit.io/grupo03/perfis/Emily.png?updatedAt=1740535030736", linkedin: "#" },
+  { name: "Andressa", role: "Full Stack Developer", image: "https://ik.imagekit.io/grupo03/perfis/Andressa.png?updatedAt=1740534607718", linkedin: "#" },
 ];
 
 function Modal() {
@@ -19,8 +19,8 @@ function Modal() {
 
   return (
     <div>
-      <h1>Team Members</h1>
-      <div className="flex flex-wrap gap-4">
+      <h1 className='py-2'>Team Members</h1>
+      <div className="flex flex-wrap gap-4 items-center justify-center">
         {teamMembers.map((member, index) => (
           <div 
             key={index} 
@@ -28,11 +28,12 @@ function Modal() {
               setSelectedMember(member);
               setIsOpen(true);
             }} 
-            className='member-card cursor-pointer border p-4 rounded-lg shadow-lg hover:shadow-xl transition-all'
+            className='member-card cursor-pointer border p-4 rounded-lg shadow-lg hover:shadow-xl transition-all text-center'
           >
-            <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto"/>
-            <h2 className="text-lg font-bold text-center">{member.name}</h2>
-            <p className="text-sm text-gray-600 text-center">{member.role}</p>
+              <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto"/>
+                <h2 className="text-md font-bold text-center">{member.name}</h2>
+                <p className="text-sm text-gray-600 text-center">{member.role}</p>
+              <button className='bg-zinc-800 text-zinc-200 p-2 rounded-md hover:scale-105'>Saiba mais</button>
           </div>
         ))}
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';  
-import { Printer, PencilLine, Trash, Money } from '@phosphor-icons/react';  
+import { Printer, PencilLine, Trash } from '@phosphor-icons/react';  
 import { colaboradoresData, Colaborador } from './ColaboradoresData';  
 import ModalColaborador from '../modal/ModalColaborador';
 
